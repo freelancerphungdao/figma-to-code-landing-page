@@ -1,81 +1,165 @@
 # Figma to Code Landing Page
 
-A freelance-ready landing page template built with **React + TypeScript + Vite**.
+Freelance-focused landing page template built with **React + TypeScript + Vite**.
 
-This repository demonstrates:
+This repository is designed to help you win and deliver landing-page freelance jobs faster.
+
+## Live Demo
+
+- Demo URL: `https://<your-vercel-domain>.vercel.app`
+
+## What This Repo Demonstrates
 
 - Responsive implementation for mobile, tablet, and desktop
-- Clean component-based structure
-- Lightweight section animations
-- Production-ready setup with linting and formatting
-- Live deployment flow for Vercel
+- Reusable section architecture for rapid client customization
+- Lightweight animation with performance-friendly motion
+- Clean code standards with ESLint and Prettier
+- Portfolio-ready delivery workflow with handoff checklist
 
-## Tech Stack
+## Built With
 
 - React 18
 - TypeScript
 - Vite
 - Tailwind CSS v4
-- Motion (for animations)
+- Motion (animation)
 - ESLint + Prettier
 
-## Getting Started
+## Multi-Variant Showcase
 
-1. Install dependencies:
+The page includes three visual/content variants to demonstrate flexibility during client pitching:
 
-```bash
-pnpm install
-```
+- `SaaS Startup`
+- `Creative Agency`
+- `Product Launch`
 
-2. Run the development server:
+Switch between variants from the header to show adaptation speed.
 
-```bash
-pnpm dev
-```
+## Reusable Sections
 
-3. Open `http://localhost:5173`
+All major landing blocks are componentized and data-driven:
 
-## Scripts
+- Hero
+- Features
+- Testimonials
+- Pricing
+- FAQ
+- Process
+- Contact Form
+- Footer
 
-- `pnpm dev` - start local dev server
-- `pnpm build` - type-check and build for production
-- `pnpm preview` - preview production build locally
-- `pnpm lint` - run lint checks
-- `pnpm lint:fix` - auto-fix lint issues
-- `pnpm format` - format files with Prettier
-- `pnpm format:check` - verify formatting
+Content is managed from `src/content/variants.ts`.
 
-## Deploy Live Demo (Vercel)
+## Contact Form (Freelance Utility)
 
-1. Push this repo to GitHub.
-2. Go to Vercel and create a new project from the GitHub repository.
-3. Keep default settings:
-   - Framework Preset: `Vite`
-   - Build Command: `pnpm build`
-   - Output Directory: `dist`
-4. Deploy.
+The contact section includes:
 
-After deployment, add the live URL to your portfolio and freelance proposals.
+- Client-side validation (`name`, `email`, `message`)
+- Mock async submit state
+- Integration note for Formspree/Resend/custom API
+
+This is enough for demo proposals and easy to connect to production forms.
+
+## SEO and Social Preview
+
+Included in `index.html`:
+
+- Meta title and description
+- Canonical URL
+- Open Graph tags
+- Twitter card tags
+- Favicon and OG image assets in `/public`
 
 ## Project Structure
 
 ```text
 .
+├── public
+│   ├── favicon.svg
+│   └── og-cover.svg
 ├── src
+│   ├── components/sections
+│   ├── content/variants.ts
+│   ├── types/landing.ts
 │   ├── App.tsx
 │   ├── index.css
 │   └── main.tsx
+├── CLIENT-HANDOFF.md
 ├── eslint.config.js
 ├── index.html
 ├── package.json
-├── tsconfig.app.json
-├── tsconfig.node.json
-├── tsconfig.json
 └── vite.config.ts
 ```
 
-## Notes
+## Getting Started
 
-- Replace placeholder contact info in `src/App.tsx`.
-- Tune typography, colors, and spacing per Figma file.
-- Keep animations subtle for better performance and UX.
+1. Install dependencies
+
+```bash
+pnpm install
+```
+
+2. Start local development
+
+```bash
+pnpm dev
+```
+
+3. Build production output
+
+```bash
+pnpm build
+```
+
+4. Preview production build
+
+```bash
+pnpm preview
+```
+
+## Scripts
+
+- `pnpm dev` - Run dev server
+- `pnpm build` - Type-check and build
+- `pnpm preview` - Preview built app
+- `pnpm lint` - Lint code
+- `pnpm lint:fix` - Fix lint issues
+- `pnpm format` - Format files
+- `pnpm format:check` - Check formatting
+
+## Deploy to Vercel
+
+1. Push repository to GitHub
+2. Import project in Vercel
+3. Keep defaults for Vite:
+   - Build Command: `pnpm build`
+   - Output Directory: `dist`
+4. Deploy
+
+## Screenshot Checklist (for portfolio quality)
+
+Capture and place screenshots in your portfolio docs:
+
+- Mobile hero + CTA
+- Tablet section layout
+- Desktop full-page view
+- Variant switcher preview
+- Contact form validation state
+
+## Freelance Packaging Suggestions
+
+Use this repo to offer clear package tiers in proposals:
+
+- Basic: one responsive landing page
+- Standard: landing + animations + contact form integration
+- Premium: standard + performance pass + handoff package
+
+## Typical Delivery Timeline
+
+- Initial build: 1 to 2 days
+- Revision round: 0.5 to 1 day
+- Final polish + deploy: 0.5 day
+
+## Handoff
+
+See [CLIENT-HANDOFF.md](./CLIENT-HANDOFF.md) for the full delivery checklist.

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#020617" />
+      <stop offset="1" stop-color="#111827" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee" />
+      <stop offset="1" stop-color="#84cc16" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="980" cy="120" r="170" fill="#22d3ee" opacity="0.16" />
+  <circle cx="180" cy="560" r="210" fill="#84cc16" opacity="0.14" />
+  <g fill="#e2e8f0" font-family="Space Grotesk, Sora, sans-serif">
+    <text x="90" y="220" font-size="34" letter-spacing="8">FIGMA TO CODE</text>
+    <text x="90" y="325" font-size="72" font-weight="700">Freelance Landing</text>
+    <text x="90" y="405" font-size="72" font-weight="700">Page Template</text>
+    <text x="90" y="475" font-size="30" opacity="0.86">Responsive • Reusable • Conversion-focused</text>
+  </g>
+  <rect x="86" y="132" width="300" height="8" rx="4" fill="url(#accent)" />
+</svg>

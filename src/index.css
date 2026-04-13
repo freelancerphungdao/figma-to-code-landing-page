@@ -1,9 +1,12 @@
 @import 'tailwindcss';
 
 :root {
-  font-family: 'Sora', 'Manrope', system-ui, -apple-system, sans-serif;
+  font-family: 'Space Grotesk', 'Sora', 'Manrope', system-ui, -apple-system, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
@@ -17,6 +20,14 @@ body,
   min-height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #020617;
+}
+
+::selection {
+  background: color-mix(in oklab, #22d3ee 35%, transparent);
 }
