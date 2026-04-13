@@ -18,11 +18,11 @@ This repository is designed to help you win and deliver landing-page freelance j
 
 ## Built With
 
-- React 18
-- TypeScript
-- Vite
-- Tailwind CSS v4
-- Motion (animation)
+- React 19.2.5
+- TypeScript 6.0.2
+- Vite 6.4.1
+- Tailwind CSS 4.2.2
+- Motion 12.38.0 (animation)
 - ESLint + Prettier
 
 ## Multi-Variant Showcase
